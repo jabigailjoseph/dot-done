@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calendar-app">
+    <h1 id="calendar-title">My Habit Tracker</h1>
+    <div id="month-label"></div>
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Popup modal -->
+  <div id="modal" class="modal hidden">
+    <h3>Log Your Day</h3>
+    <label>
+      <input type="radio" name="status" value="green" /> Good (Green)
+    </label>
+    <label>
+      <input type="radio" name="status" value="red" /> Bad (Red)
+    </label>
+    <textarea id="note" placeholder="Write a note..."></textarea>
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
